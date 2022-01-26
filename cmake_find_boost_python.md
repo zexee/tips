@@ -12,4 +12,5 @@ Find Boost.Python
     set(BOOST_INCLUDEDIR /usr/local/include)  # to boost include directory
     set(BOOST_LIBRARYDIR /usr/local/lib)  # to boost lib directory
     find_package(Boost REQUIRED COMPONENTS python36 numpy36)  # corresponding to lib filename
+    link_libraries(${Boost_PYTHON36_LIBRARY} ${Boost_NUMPY36_LIBRARY})  # corresponding to package name
 
